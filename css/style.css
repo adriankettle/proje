@@ -1,0 +1,12 @@
+*{
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: lightgrey;
+}
+
+#nb a{
+  text-decoration: none;
+    background: steelblue;
+    color: white;
+    padding: 10 10;
+}

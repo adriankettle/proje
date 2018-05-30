@@ -1,0 +1,23 @@
+*{
+  margin: 0px;
+  font-family: sans-serif;
+
+}
+
+#navbar{
+  text-decoration: none;
+  background-color: skyblue;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#body{
+  background-color: gray;
+}
