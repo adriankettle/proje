@@ -1,0 +1,7 @@
+#form{
+  float: inherit;
+  align-items: center;
+  background-color: skyblue;
+  color: white;
+  padding: 5px;
+}

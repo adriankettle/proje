@@ -1,0 +1,19 @@
+*{
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+#data{
+  background-color: purple;
+  color: white;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.box{
+  width: auto;
+  padding: 8px;
+  height: auto;
+  background-color: coral;
+  color: white;
+}

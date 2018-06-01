@@ -45,3 +45,9 @@ tbody{
   width: 400px;
   height: 350px;
 }
+
+.shades{
+  background-color: skyblue;
+  color: purple;
+  padding-top: 10px;
+}
