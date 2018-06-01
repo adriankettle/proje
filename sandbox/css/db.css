@@ -1,0 +1,38 @@
+*{
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+.well{
+  background-color: skyblue;
+  color: purple;
+  padding: 10px;
+  box-decoration-break: slice;
+  width: auto;
+  height: auto;
+}
+
+h2{
+  text-align: center;
+  background-color: steelblue;
+}
+
+a{
+  padding: 2px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: green;
+  color: white;
+}
+
+small{
+  font-family: Arial;
+  font-size: 12px;
+}
+p{
+  font-size: 17px;
+}
+
+h4{
+  text-align: center;
+}

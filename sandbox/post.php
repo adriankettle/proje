@@ -1,12 +1,17 @@
 <?php
+  //had to comment that don't respond properly to be continued....
+  // require ('config/config.php');
   require ('config/db.php');
 
+  //Get id
+  $id = mysqli_real_escape_string($conn, $_GET['id']);
+
   //Create Query
-  $query = 'SELECT * FROM post';
+  $query = 'SELECT * FROM post WHERE id= '. $id;
 
   $result = mysqli_query($conn, $query);
     //fetch data
-    $post = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    $post = mysqli_fetch_assoc($result);
     // var_dump($post);
     mysqli_free_result($result);
 
@@ -21,15 +26,18 @@
     <title>Post</title>
   </head>
   <body>
+    <div class="nav">
+      <nav>
+        <a href="./">Home</a>
+      </nav>
+    </div>
     <h2>Post</h2>
-    <?php foreach($post as $post) : ?>
       <div class="well">
         <h4><?php echo $post['title']; ?></h4>
         <small>Created on <?php echo $post['created_at']; ?> by <?php echo $post['author']; ?></small>
         <p><?php echo $post['body']; ?></p>
-        <a href="post.php?id=<?php echo $post['id']; ?>">Read More</a>
       </div>
-    <?php endforeach; ?>
+
     <script src="js/db.js" charset="utf-8"></script>
   </body>
 </html>
